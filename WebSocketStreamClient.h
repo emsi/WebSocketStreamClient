@@ -16,13 +16,13 @@ public:
 
   int connect(const IPAddress ip, uint16_t port)
   {
-    _webSocketClient->begin(_path);
+    _webSocketClient->begin(_path, "mqtt");
     return 1;
   }
 
   int connect(const char *host, uint16_t port)
   {
-    _webSocketClient->begin(_path);
+    _webSocketClient->begin(_path, "mqtt");
     return 1;
   }
 
